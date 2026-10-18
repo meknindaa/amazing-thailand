@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
     <style>  
         body { font-family: 'Prompt', sans-serif; }  
-          
-        /* สไตล์ไล่สีชมพูพาสเทลฟุ้งละมุน */  
         .pastel-pink-gradient {  
             background: linear-gradient(  
                 135deg,   
@@ -59,7 +57,7 @@
             </div>  
   
             <p class="text-base md:text-lg text-rose-50 max-w-2xl mx-auto font-light drop-shadow-sm">  
-                รวบรวมไฮไลท์แหล่งท่องเที่ยว ที่กิน ที่นอน และของขึ้นชื่อจาก 6 ภาคทั่วไทย  
+                รวบรวมไฮไลท์แหล่งท่องเที่ยว ที่กิน ที่นอน และของขึ้นชื่อจาก 6 จังหวัดทั่วไทย  
             </p>  
   
             <div class="pt-3">  
@@ -74,30 +72,64 @@
     <main id="destinations" class="max-w-7xl mx-auto px-6 py-16 space-y-12">  
         <div class="text-center space-y-2">  
             <h3 class="text-3xl font-bold text-slate-800">จุดหมายปลายทางแนะนำ</h3>  
-            <p class="text-slate-500">เลือกภาคที่คุณสนใจ แล้วไปค้นพบความสวยงามที่รอให้คุณมาสัมผัส</p>  
+            <p class="text-slate-500">เลือกจังหวัดที่คุณสนใจ แล้วไปค้นพบความสวยงามที่รอให้คุณมาสัมผัส</p>  
         </div>  
   
         <!-- Grid 6 จังหวัด -->  
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
               
-            <!-- 1. น่าน (ภาคเหนือ) -->  
+            <!-- 1. เชียงใหม่ -->  
             <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
                 <div class="relative h-52">  
-                    <img src="images/n2.jpg" alt="น่าน" class="w-full h-full object-cover">  
+                    <img src="images/n2.jpg" alt="เชียงใหม่" class="w-full h-full object-cover">  
                     <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคเหนือ</span>  
                 </div>  
                 <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
                     <div>  
-                        <h4 class="text-2xl font-bold text-slate-800">น่าน</h4>  
-                        <p class="text-slate-500 text-sm mt-1">"กระซิบรักบรรลือโลก นครแห่งความเนิบช้า"</p>  
+                        <h4 class="text-2xl font-bold text-slate-800">เชียงใหม่</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"เมืองศูนย์กลางแห่งล้านนา โดดเด่นด้วยวัฒนธรรม"</p>  
                     </div>  
-                    <button onclick="openModal('modal-nan')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                    <button onclick="openModal('modal-cm')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm cursor-pointer">  
                         <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
                     </button>  
                 </div>  
             </div>  
   
-            <!-- 2. ขอนแก่น (ภาคอีสาน) -->  
+            <!-- 2. กรุงเทพมหานคร -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/c2.jpg" alt="กรุงเทพมหานคร" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคกลาง</span>  
+                </div>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">กรุงเทพมหานคร</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"มหานครศูนย์กลางของประเทศ ผสมผสานความทันสมัย"</p>  
+                    </div>  
+                    <button onclick="openModal('modal-bkk')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm cursor-pointer">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
+                </div>  
+            </div>  
+  
+            <!-- 3. ชลบุรี -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/e2.jpg" alt="ชลบุรี" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคตะวันออก</span>  
+                </div>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">ชลบุรี</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"เมืองท่องเที่ยวชายทะเลใกล้กรุงเทพฯ และพัทยา"</p>  
+                    </div>  
+                    <button onclick="openModal('modal-cb')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm cursor-pointer">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
+                </div>  
+            </div>  
+  
+            <!-- 4. ขอนแก่น -->  
             <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
                 <div class="relative h-52">  
                     <img src="images/ne1.jpg" alt="ขอนแก่น" class="w-full h-full object-cover">  
@@ -106,49 +138,15 @@
                 <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
                     <div>  
                         <h4 class="text-2xl font-bold text-slate-800">ขอนแก่น</h4>  
-                        <p class="text-slate-500 text-sm mt-1">"เมืองไดโนเสาร์และบึงแก่นนครอันเลื่องชื่อ"</p>  
+                        <p class="text-slate-500 text-sm mt-1">"เมืองใหญ่แห่งแดนอีสาน ไดโนเสาร์และบึงแก่นนคร"</p>  
                     </div>  
-                    <button onclick="openModal('modal-kk')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                    <button onclick="openModal('modal-kk')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm cursor-pointer">  
                         <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
                     </button>  
                 </div>  
             </div>  
   
-            <!-- 3. พระนครศรีอยุธยา (ภาคกลาง) -->  
-            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
-                <div class="relative h-52">  
-                    <img src="images/c2.jpg" alt="พระนครศรีอยุธยา" class="w-full h-full object-cover">  
-                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคกลาง</span>  
-                </div>  
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
-                    <div>  
-                        <h4 class="text-2xl font-bold text-slate-800">พระนครศรีอยุธยา</h4>  
-                        <p class="text-slate-500 text-sm mt-1">"ราชธานีเก่าู่อ้าวุ่น แหล่งมรดกโลก"</p>  
-                    </div>  
-                    <button onclick="openModal('modal-ayutthaya')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
-                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
-                    </button>  
-                </div>  
-            </div>  
-  
-            <!-- 4. จันทบุรี (ภาคตะวันออก) -->  
-            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
-                <div class="relative h-52">  
-                    <img src="images/e2.jpg" alt="จันทบุรี" class="w-full h-full object-cover">  
-                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคตะวันออก</span>  
-                </div>  
-                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
-                    <div>  
-                        <h4 class="text-2xl font-bold text-slate-800">จันทบุรี</h4>  
-                        <p class="text-slate-500 text-sm mt-1">"เมืองผลไม้ พริกไทยพันธุ์ดี อัญมณีล้ำค่า"</p>  
-                    </div>  
-                    <button onclick="openModal('modal-chanthaburi')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
-                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
-                    </button>  
-                </div>  
-            </div>  
-  
-            <!-- 5. กาญจนบุรี (ภาคตะวันตก) -->  
+            <!-- 5. กาญจนบุรี -->  
             <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
                 <div class="relative h-52">  
                     <img src="images/w6.jpg" alt="กาญจนบุรี" class="w-full h-full object-cover">  
@@ -157,15 +155,15 @@
                 <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
                     <div>  
                         <h4 class="text-2xl font-bold text-slate-800">กาญจนบุรี</h4>  
-                        <p class="text-slate-500 text-sm mt-1">"แคว้นโบราณ ด่านเจดีย์ มณีเมืองกาญจน์"</p>  
+                        <p class="text-slate-500 text-sm mt-1">"เมืองแห่งธรรมชาติ ขุนเขา สายน้ำ"</p>  
                     </div>  
-                    <button onclick="openModal('modal-kanchanaburi')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                    <button onclick="openModal('modal-kan')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm cursor-pointer">  
                         <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
                     </button>  
                 </div>  
             </div>  
   
-            <!-- 6. ภูเก็ต (ภาคใต้) -->  
+            <!-- 6. ภูเก็ต -->  
             <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
                 <div class="relative h-52">  
                     <img src="images/s6.jpg" alt="ภูเก็ต" class="w-full h-full object-cover">  
@@ -176,7 +174,7 @@
                         <h4 class="text-2xl font-bold text-slate-800">ภูเก็ต</h4>  
                         <p class="text-slate-500 text-sm mt-1">"ไข่มุกอันดามัน สวรรค์เมืองใต้"</p>  
                     </div>  
-                    <button onclick="openModal('modal-phuket')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                    <button onclick="openModal('modal-pkt')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm cursor-pointer">  
                         <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
                     </button>  
                 </div>  
@@ -185,52 +183,264 @@
         </div>  
     </main>  
   
-    <!-- MODAL ตัวอย่าง: จังหวัดน่าน (สามารถทำเพิ่มสำหรับจังหวัดอื่นตามแพทเทิร์นนี้ได้เลยครับ) -->  
-    <div id="modal-nan" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
+    <!-- MODAL 1: เชียงใหม่ -->  
+    <div id="modal-cm" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
         <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">  
-            <button onclick="closeModal('modal-nan')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition">  
-                ✕  
-            </button>  
-              
+            <button onclick="closeModal('modal-cm')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition cursor-pointer">✕</button>  
             <div class="h-64 bg-cover bg-center relative" style="background-image: url('images/n2.jpg');">  
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>  
                 <div class="absolute bottom-6 left-6 text-white space-y-1">  
                     <span class="bg-rose-600 px-3 py-1 rounded-full text-xs font-semibold">ภาคเหนือ</span>  
-                    <h3 class="text-3xl font-bold">น่าน</h3>  
-                    <p class="text-slate-200 text-sm">"กระซิบรักบรรลือโลก นครแห่งความเนิบช้า"</p>  
+                    <h3 class="text-3xl font-bold">เชียงใหม่</h3>  
+                    <p class="text-slate-200 text-sm">เมืองศูนย์กลางแห่งล้านนา โดดเด่นด้วยวัฒนธรรม อากาศดี และขุนเขา</p>  
                 </div>  
             </div>  
-  
             <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50">  
                 <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
                     <h4 class="font-bold text-rose-700 flex items-center gap-2">⛰️ เที่ยว</h4>  
                     <ul class="text-sm text-slate-600 space-y-1.5">  
-                        <li>✔️ วัดภูมินทร์ (กระซิบรักบันลือโลก)</li>  
-                        <li>✔️ ดอยเสมอดาว (จุดชมทะเลหมอก)</li>  
-                        <li>✔️ บ่อเกลือโบราณ 800 ปี</li>  
+                        <li>✔️ ดอยอินทนนท์</li>  
+                        <li>✔️ วัดพระธาตุดอยสุเทพ</li>  
                     </ul>  
                 </div>  
                 <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
                     <h4 class="font-bold text-orange-600 flex items-center gap-2">🍜 กิน</h4>  
                     <ul class="text-sm text-slate-600 space-y-1.5">  
-                        <li>✔️ ข้าวซอยแม่ฮอก</li>  
-                        <li>✔️ ไก่ทอดมะแขว่นสูตรเมืองน่าน</li>  
-                        <li>✔️ คาเฟ่ริมแม่น้ำน่าน</li>  
+                        <li>✔️ ข้าวซอย</li>  
+                        <li>✔️ ใส้อั่ว</li>  
+                        <li>✔️ น้ำพริกอ่อง</li>  
                     </ul>  
                 </div>  
                 <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
                     <h4 class="font-bold text-purple-600 flex items-center gap-2">🏨 นอน</h4>  
                     <ul class="text-sm text-slate-600 space-y-1.5">  
-                        <li>✔️ PX12 Capsule Hotel</li>  
-                        <li>✔️ Cocoa Valley Resort</li>  
-                        <li>✔️ Boklua View Resort</li>  
+                        <li>✔️ โรงแรมและรีสอร์ทสไตล์ล้านนา</li>  
                     </ul>  
                 </div>  
                 <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
                     <h4 class="font-bold text-emerald-600 flex items-center gap-2">🎁 ของขึ้นชื่อ</h4>  
                     <ul class="text-sm text-slate-600 space-y-1.5">  
-                        <li>⭐ ผ้าทอเมืองน่าน (ผ้าลายน้ำไหล / ผ้าไทลื้อ)</li>  
-                        <li>⭐ เครื่องเงินน่าน (ชมプภูคา)</li>  
+                        <li>⭐ ผ้าพื้นเมือง / ของฝากเชียงใหม่</li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <!-- MODAL 2: กรุงเทพมหานคร -->  
+    <div id="modal-bkk" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
+        <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">  
+            <button onclick="closeModal('modal-bkk')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition cursor-pointer">✕</button>  
+            <div class="h-64 bg-cover bg-center relative" style="background-image: url('images/c2.jpg');">  
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>  
+                <div class="absolute bottom-6 left-6 text-white space-y-1">  
+                    <span class="bg-rose-600 px-3 py-1 rounded-full text-xs font-semibold">ภาคกลาง</span>  
+                    <h3 class="text-3xl font-bold">กรุงเทพมหานคร</h3>  
+                    <p class="text-slate-200 text-sm">มหานครศูนย์กลางของประเทศ ผสมผสานความทันสมัยกับวัดวาอาราม</p>  
+                </div>  
+            </div>  
+            <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50">  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-rose-700 flex items-center gap-2">🕌 เที่ยว</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ วัดพระแก้ว</li>  
+                        <li>✔️ วัดอรุณฯ</li>  
+                        <li>✔️ เยาวราช</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-orange-600 flex items-center gap-2">🍲 กิน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ สตรีทฟู้ดเยาวราช</li>  
+                        <li>✔️ ผัดไทยทิพย์สมัย</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-purple-600 flex items-center gap-2">🏨 นอน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ โรงแรมริมแม่น้ำเจ้าพระยา</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-emerald-600 flex items-center gap-2">🎁 ของขึ้นชื่อ</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>⭐ ขนมไทย / ของที่ระลึกกรุงเทพฯ</li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <!-- MODAL 3: ชลบุรี -->  
+    <div id="modal-cb" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
+        <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">  
+            <button onclick="closeModal('modal-cb')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition cursor-pointer">✕</button>  
+            <div class="h-64 bg-cover bg-center relative" style="background-image: url('images/e2.jpg');">  
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>  
+                <div class="absolute bottom-6 left-6 text-white space-y-1">  
+                    <span class="bg-rose-600 px-3 py-1 rounded-full text-xs font-semibold">ภาคตะวันออก</span>  
+                    <h3 class="text-3xl font-bold">ชลบุรี</h3>  
+                    <p class="text-slate-200 text-sm">เมืองท่องเที่ยวชายทะเลใกล้นครหลวง มีทั้งหาดทราย เกาะสวย และพัทยา</p>  
+                </div>  
+            </div>  
+            <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50">  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-rose-700 flex items-center gap-2">🏖️ เที่ยว</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ เกาะล้าน</li>  
+                        <li>✔️ หาดบางแสน</li>  
+                        <li>✔️ ปราสาทสัจธรรม</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-orange-600 flex items-center gap-2">🦐 กิน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ ซีฟู้ดอ่างศิลา</li>  
+                        <li>✔️ ข้าวหลามหนองมน</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-purple-600 flex items-center gap-2">🏨 นอน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ รีสอร์ทติดชายหาดพัทยา / เกาะล้าน</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-emerald-600 flex items-center gap-2">🎁 ของขึ้นชื่อ</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>⭐ ข้าวหลาม / ผลิตภัณฑ์จากทะเล</li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <!-- MODAL 4: ขอนแก่น -->  
+    <div id="modal-kk" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
+        <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">  
+            <button onclick="closeModal('modal-kk')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition cursor-pointer">✕</button>  
+            <div class="h-64 bg-cover bg-center relative" style="background-image: url('images/ne1.jpg');">  
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>  
+                <div class="absolute bottom-6 left-6 text-white space-y-1">  
+                    <span class="bg-rose-600 px-3 py-1 rounded-full text-xs font-semibold">ภาคตะวันออกเฉียงเหนือ</span>  
+                    <h3 class="text-3xl font-bold">ขอนแก่น</h3>  
+                    <p class="text-slate-200 text-sm">เมืองใหญ่แห่งแดนอีสาน มีความเจริญควบคู่ไปกับอารยธรรมและไดโนเสาร์</p>  
+                </div>  
+            </div>  
+            <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50">  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-rose-700 flex items-center gap-2">🦕 เที่ยว</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ พระมหาธาตุแก่นนคร</li>  
+                        <li>✔️ บึงแก่นนคร</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-orange-600 flex items-center gap-2">🍗 กิน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ ไก่ย่างเขาสวนกวาง</li>  
+                        <li>✔️ ส้มตำแซ่บๆ</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-purple-600 flex items-center gap-2">🏨 นอน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ โรงแรมพูลแมน ขอนแก่น</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-emerald-600 flex items-center gap-2">🎁 ของขึ้นชื่อ</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>⭐ ผ้าไหมขอนแก่น / แหนมตุ้ม</li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <!-- MODAL 5: กาญจนบุรี -->  
+    <div id="modal-kan" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
+        <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">  
+            <button onclick="closeModal('modal-kan')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition cursor-pointer">✕</button>  
+            <div class="h-64 bg-cover bg-center relative" style="background-image: url('images/w6.jpg');">  
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>  
+                <div class="absolute bottom-6 left-6 text-white space-y-1">  
+                    <span class="bg-rose-600 px-3 py-1 rounded-full text-xs font-semibold">ภาคตะวันตก</span>  
+                    <h3 class="text-3xl font-bold">กาญจนบุรี</h3>  
+                    <p class="text-slate-200 text-sm">เมืองแห่งธรรมชาติ ขุนเขา สายน้ำ และประวัติศาสตร์สมัยสงครามโลกครั้งที่ 2</p>  
+                </div>  
+            </div>  
+            <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50">  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-rose-700 flex items-center gap-2">🌉 เที่ยว</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ สะพานข้ามแม่น้ำแคว</li>  
+                        <li>✔️ น้ำตกเอราวัณ</li>  
+                        <li>✔️ สังขละบุรี</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-orange-600 flex items-center gap-2">🐟 กิน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ ต้มยำปลาคัง</li>  
+                        <li>✔️ แกงป่ารสจัดจ้าน</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-purple-600 flex items-center gap-2">🏨 นอน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ แพพักริมแม่น้ำแคว / รีสอร์ทธรรมชาติ</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-emerald-600 flex items-center gap-2">🎁 ของขึ้นชื่อ</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>⭐ นิลแท้เมืองกาญจน์ / วุ้นเส้น</li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <!-- MODAL 6: ภูเก็ต -->  
+    <div id="modal-pkt" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
+        <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">  
+            <button onclick="closeModal('modal-pkt')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition cursor-pointer">✕</button>  
+            <div class="h-64 bg-cover bg-center relative" style="background-image: url('images/s6.jpg');">  
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>  
+                <div class="absolute bottom-6 left-6 text-white space-y-1">  
+                    <span class="bg-rose-600 px-3 py-1 rounded-full text-xs font-semibold">ภาคใต้</span>  
+                    <h3 class="text-3xl font-bold">ภูเก็ต</h3>  
+                    <p class="text-slate-200 text-sm">ไข่มุกอันดามัน เกาะสวรรค์ระดับโลก โดดเด่นด้วยทะเลสวยและตึกชิโนโปรตุกีส</p>  
+                </div>  
+            </div>  
+            <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50">  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-rose-700 flex items-center gap-2">🏝️ เที่ยว</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ แหลมพรหมเทพ</li>  
+                        <li>✔️ ย่านเมืองเก่าภูเก็ต</li>  
+                        <li>✔️ หาดป่าตอง</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-orange-600 flex items-center gap-2">🥟 กิน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ หมี่ฮกเกี้ยน</li>  
+                        <li>✔️ ขนมจีนป้าติ่ง</li>  
+                        <li>✔️ โอต้าว</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-purple-600 flex items-center gap-2">🏨 นอน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ พูลวิลล่าวิวทะเล / บูติคโฮเทลเมืองเก่า</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-emerald-600 flex items-center gap-2">🎁 ของขึ้นชื่อ</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>⭐ น้ำพริกกุ้งเสียบ / เต้าส้อภูเก็ต</li>  
                     </ul>  
                 </div>  
             </div>  
