@@ -10,407 +10,256 @@
     <style>  
         body { font-family: 'Prompt', sans-serif; }  
           
-        /* สไตล์ไล่สีชมพูพาสเทลจากบนลงล่างแบบฟุ้งเบลอ */  
-        .pink-hero-gradient {  
+        /* สไตล์ไล่สีชมพูพาสเทลฟุ้งละมุน */  
+        .pastel-pink-gradient {  
             background: linear-gradient(  
-                180deg,   
-                rgba(131, 24, 67, 0.65) 0%,   
-                rgba(219, 39, 119, 0.35) 45%,   
-                rgba(252, 231, 243, 0.85) 80%,   
-                rgba(253, 242, 248, 1) 100%  
+                135deg,   
+                rgba(225, 29, 72, 0.7) 0%,   
+                rgba(244, 63, 94, 0.5) 50%,   
+                rgba(251, 113, 133, 0.4) 100%  
             );  
         }  
     </style>  
 </head>  
-<body class="bg-pink-50/50 text-slate-700 antialiased min-h-screen">  
+<body class="bg-rose-50/40 text-slate-700 antialiased min-h-screen">  
   
     <!-- Navigation Bar -->  
-    <nav class="bg-pink-900/90 backdrop-blur-md text-white sticky top-0 z-50 shadow-sm border-b border-pink-700/40">  
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-40 border-b border-rose-100">  
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">  
-            <h1 class="text-xl font-bold tracking-wide flex items-center space-x-2">  
+            <h1 class="text-xl font-bold tracking-wide text-rose-600 flex items-center space-x-2">  
                 <span>🌸</span>  
-                <span class="bg-gradient-to-r from-pink-200 to-rose-100 bg-clip-text text-transparent">Amazing Thailand</span>  
+                <span>Amazing Thailand</span>  
             </h1>  
-            <div class="hidden md:flex space-x-6 text-sm font-medium">  
-                <a href="#north" class="hover:text-pink-200 transition duration-200">ภาคเหนือ</a>  
-                <a href="#northeast" class="hover:text-pink-200 transition duration-200">ภาคอีสาน</a>  
-                <a href="#central" class="hover:text-pink-200 transition duration-200">ภาคกลาง</a>  
-                <a href="#east" class="hover:text-pink-200 transition duration-200">ภาคตะวันออก</a>  
-                <a href="#west" class="hover:text-pink-200 transition duration-200">ภาคตะวันตก</a>  
-                <a href="#south" class="hover:text-pink-200 transition duration-200">ภาคใต้</a>  
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">  
+                <a href="#" class="hover:text-rose-500 transition">หน้าแรก</a>  
+                <a href="#destinations" class="hover:text-rose-500 transition">จุดหมายปลายทาง</a>  
+                <a href="#footer" class="hover:text-rose-500 transition">เกี่ยวกับแคมเปญ</a>  
             </div>  
         </div>  
     </nav>  
   
-    <!-- Hero Header (ใช้ชั้นไล่สีชมพูฟุ้งเบลอคลุมบนภาพ) -->  
-    <header class="relative bg-cover bg-center h-[460px] flex items-center justify-center text-white text-center px-4" style="background-image: url('images/bg.jpg');">  
-        <!-- Overlay ไล่สีชมพูฟุ้งเบลอ -->  
-        <div class="absolute inset-0 pink-hero-gradient"></div>  
+    <!-- Hero Header -->  
+    <header class="relative bg-cover bg-center h-[540px] flex items-center justify-center text-white text-center px-4" style="background-image: url('images/bg.jpg');">  
+        <div class="absolute inset-0 pastel-pink-gradient"></div>  
           
-        <div class="relative z-10 max-w-3xl space-y-4">  
-            <span class="bg-white/20 backdrop-blur-md text-pink-100 border border-white/30 text-xs px-4 py-1.5 rounded-full uppercase tracking-wider font-semibold shadow-sm">Midterm Project 1-2569</span>  
-            <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-md">Amazing Thailand <br><span class="text-pink-200">1 ภาค 1 จังหวัด</span></h2>  
-            <p class="text-base md:text-lg text-pink-50 max-w-xl mx-auto font-light drop-shadow">ไม่ไปไม่รู้! รวบรวมไฮไลท์แหล่งท่องเที่ยว ที่กิน ที่นอน จาก 6 ภาคทั่วไทย</p>  
+        <div class="relative z-10 max-w-4xl mx-auto space-y-5">  
+            <div class="inline-block">  
+                <span class="bg-white/30 backdrop-blur-md text-white border border-white/40 text-xs md:text-sm px-5 py-2 rounded-full uppercase tracking-wider font-semibold shadow-sm">  
+                    ✨ Midterm Project 1-2569  
+                </span>  
+            </div>  
+              
+            <div class="space-y-3">  
+                <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-md">  
+                    Amazing Thailand  
+                </h2>  
+                <h3 class="text-3xl md:text-5xl font-bold text-rose-100 drop-shadow-md">  
+                    1 ภาค 1 จังหวัด ไม่ไปไม่รู้  
+                </h3>  
+            </div>  
+  
+            <p class="text-base md:text-lg text-rose-50 max-w-2xl mx-auto font-light drop-shadow-sm">  
+                รวบรวมไฮไลท์แหล่งท่องเที่ยว ที่กิน ที่นอน และของขึ้นชื่อจาก 6 ภาคทั่วไทย  
+            </p>  
+  
+            <div class="pt-3">  
+                <a href="#destinations" class="bg-rose-500 hover:bg-rose-600 text-white font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg inline-flex items-center gap-2 text-base">  
+                    <span>เริ่มออกเดินทาง ✨</span>  
+                </a>  
+            </div>  
         </div>  
     </header>  
   
-    <!-- Main Content List -->  
-    <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">  
+    <!-- Destinations Grid Section -->  
+    <main id="destinations" class="max-w-7xl mx-auto px-6 py-16 space-y-12">  
+        <div class="text-center space-y-2">  
+            <h3 class="text-3xl font-bold text-slate-800">จุดหมายปลายทางแนะนำ</h3>  
+            <p class="text-slate-500">เลือกภาคที่คุณสนใจ แล้วไปค้นพบความสวยงามที่รอให้คุณมาสัมผัส</p>  
+        </div>  
   
-        <!-- 1. ภาคเหนือ: เชียงใหม่ -->  
-        <section id="north" class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl shadow-pink-100/60 overflow-hidden border border-pink-100 p-6 md:p-8 space-y-6 hover:shadow-2xl hover:border-pink-200 transition-all duration-300">  
-            <div class="flex items-center justify-between border-b border-pink-50 pb-4">  
-                <div>  
-                    <span class="bg-pink-100 text-pink-700 font-semibold px-3 py-1 rounded-full text-xs">ภาคเหนือ</span>  
-                    <h3 class="text-3xl font-bold text-slate-800 mt-2">จังหวัดเชียงใหม่</h3>  
+        <!-- Grid 6 จังหวัด -->  
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
+              
+            <!-- 1. น่าน (ภาคเหนือ) -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/n2.jpg" alt="น่าน" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคเหนือ</span>  
+                </div>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">น่าน</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"กระซิบรักบรรลือโลก นครแห่งความเนิบช้า"</p>  
+                    </div>  
+                    <button onclick="openModal('modal-nan')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
                 </div>  
             </div>  
   
-            <div class="grid lg:grid-cols-12 gap-8 items-start">  
-                <div class="lg:col-span-7 space-y-3">  
-                    <p class="text-xs font-semibold text-pink-400 uppercase tracking-wider flex items-center space-x-1">  
-                        <span>📸</span> <span>ภาพสถานที่ท่องเที่ยว</span>  
-                    </p>  
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/n2.jpg" alt="เที่ยวเชียงใหม่" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/n3.jpg" alt="เที่ยวเชียงใหม่" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/n4.jpg" alt="เที่ยวเชียงใหม่" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                    </div>  
+            <!-- 2. ขอนแก่น (ภาคอีสาน) -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/ne1.jpg" alt="ขอนแก่น" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคตะวันออกเฉียงเหนือ</span>  
                 </div>  
-  
-                <div class="lg:col-span-5 space-y-4">  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>📌</span> <span>ข้อมูลเบื้องต้น</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1 leading-relaxed">เมืองศูนย์กลางแห่งล้านนา โดดเด่นด้วยวัฒนธรรม อากาศดี และขุนเขาสวยงาม</p>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">ขอนแก่น</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"เมืองไดโนเสาร์และบึงแก่นนครอันเลื่องชื่อ"</p>  
                     </div>  
-  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏔️</span> <span>สถานที่ท่องเที่ยวแนะนำ</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1">ดอยอินทนนท์, วัดพระธาตุดอยสุเทพ</p>  
-                    </div>  
-  
-                    <div class="bg-rose-50/60 p-4 rounded-2xl border border-rose-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🍜</span> <span>ที่กินแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/n6.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/n7.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/n1.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                        </div>  
-                        <p class="text-xs text-slate-600">ข้าวซอย, ไส้อั่ว, น้ำพริกอ่อง</p>  
-                    </div>  
-  
-                    <div class="bg-pink-50/30 p-4 rounded-2xl border border-pink-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏨</span> <span>ที่นอนแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/n5.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-pink-200">  
-                            <p class="text-sm text-slate-600">โรงแรมและรีสอร์ทสไตล์ล้านนา</p>  
-                        </div>  
-                    </div>  
-                </div>  
-            </div>  
-        </section>  
-  
-        <!-- 2. ภาคอีสาน: ขอนแก่น -->  
-        <section id="northeast" class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl shadow-pink-100/60 overflow-hidden border border-pink-100 p-6 md:p-8 space-y-6 hover:shadow-2xl hover:border-pink-200 transition-all duration-300">  
-            <div class="flex items-center justify-between border-b border-pink-50 pb-4">  
-                <div>  
-                    <span class="bg-pink-100 text-pink-700 font-semibold px-3 py-1 rounded-full text-xs">ภาคตะวันออกเฉียงเหนือ</span>  
-                    <h3 class="text-3xl font-bold text-slate-800 mt-2">จังหวัดขอนแก่น</h3>  
+                    <button onclick="openModal('modal-kk')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
                 </div>  
             </div>  
   
-            <div class="grid lg:grid-cols-12 gap-8 items-start">  
-                <div class="lg:col-span-7 space-y-3">  
-                    <p class="text-xs font-semibold text-pink-400 uppercase tracking-wider flex items-center space-x-1">  
-                        <span>📸</span> <span>ภาพสถานที่ท่องเที่ยว</span>  
-                    </p>  
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/ne1.jpg" alt="เที่ยวขอนแก่น" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/ne2.jpg" alt="เที่ยวขอนแก่น" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/ne3.jpg" alt="เที่ยวขอนแก่น" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                    </div>  
+            <!-- 3. พระนครศรีอยุธยา (ภาคกลาง) -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/c2.jpg" alt="พระนครศรีอยุธยา" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคกลาง</span>  
                 </div>  
-  
-                <div class="lg:col-span-5 space-y-4">  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>📌</span> <span>ข้อมูลเบื้องต้น</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1 leading-relaxed">เมืองใหญ่แห่งแดนอีสาน มีความเจริญควบคู่ไปกับอารยธรรมและไดโนเสาร์</p>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">พระนครศรีอยุธยา</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"ราชธานีเก่าู่อ้าวุ่น แหล่งมรดกโลก"</p>  
                     </div>  
-  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🦕</span> <span>สถานที่ท่องเที่ยวแนะนำ</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1">พระมหาธาตุแก่นนคร, บึงแก่นนคร</p>  
-                    </div>  
-  
-                    <div class="bg-rose-50/60 p-4 rounded-2xl border border-rose-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🍗</span> <span>ที่กินแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/ne5.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/ne6.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                        </div>  
-                        <p class="text-xs text-slate-600">ไก่ย่างเขาสวนกวาง, ส้มตำแซ่บๆ</p>  
-                    </div>  
-  
-                    <div class="bg-pink-50/30 p-4 rounded-2xl border border-pink-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏨</span> <span>ที่นอนแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/ne4.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-pink-200">  
-                            <p class="text-sm text-slate-600">โรงแรมพูลแมน ขอนแก่น</p>  
-                        </div>  
-                    </div>  
-                </div>  
-            </div>  
-        </section>  
-  
-        <!-- 3. ภาคกลาง: กรุงเทพมหานคร -->  
-        <section id="central" class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl shadow-pink-100/60 overflow-hidden border border-pink-100 p-6 md:p-8 space-y-6 hover:shadow-2xl hover:border-pink-200 transition-all duration-300">  
-            <div class="flex items-center justify-between border-b border-pink-50 pb-4">  
-                <div>  
-                    <span class="bg-pink-100 text-pink-700 font-semibold px-3 py-1 rounded-full text-xs">ภาคกลาง</span>  
-                    <h3 class="text-3xl font-bold text-slate-800 mt-2">กรุงเทพมหานคร</h3>  
+                    <button onclick="openModal('modal-ayutthaya')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
                 </div>  
             </div>  
   
-            <div class="grid lg:grid-cols-12 gap-8 items-start">  
-                <div class="lg:col-span-7 space-y-3">  
-                    <p class="text-xs font-semibold text-pink-400 uppercase tracking-wider flex items-center space-x-1">  
-                        <span>📸</span> <span>ภาพสถานที่ท่องเที่ยว</span>  
-                    </p>  
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/c2.jpg" alt="เที่ยวกรุงเทพ" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/c1.jpg" alt="เที่ยวกรุงเทพ" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/c7.jpg" alt="เที่ยวกรุงเทพ" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                    </div>  
+            <!-- 4. จันทบุรี (ภาคตะวันออก) -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/e2.jpg" alt="จันทบุรี" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคตะวันออก</span>  
                 </div>  
-  
-                <div class="lg:col-span-5 space-y-4">  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>📌</span> <span>ข้อมูลเบื้องต้น</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1 leading-relaxed">มหานครศูนย์กลางของประเทศ ผสมผสานความทันสมัยกับวัดวาอาราม</p>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">จันทบุรี</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"เมืองผลไม้ พริกไทยพันธุ์ดี อัญมณีล้ำค่า"</p>  
                     </div>  
-  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🕌</span> <span>สถานที่ท่องเที่ยวแนะนำ</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1">วัดพระแก้ว, วัดอรุณฯ, เยาวราช</p>  
-                    </div>  
-  
-                    <div class="bg-rose-50/60 p-4 rounded-2xl border border-rose-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🍲</span> <span>ที่กินแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/c5.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/c4.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                        </div>  
-                        <p class="text-xs text-slate-600">สตรีทฟู้ดเยาวราช, ผัดไทยทิพย์สมัย</p>  
-                    </div>  
-  
-                    <div class="bg-pink-50/30 p-4 rounded-2xl border border-pink-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏨</span> <span>ที่นอนแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/c3.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-pink-200">  
-                            <p class="text-sm text-slate-600">โรงแรมริมแม่น้ำเจ้าพระยา</p>  
-                        </div>  
-                    </div>  
-                </div>  
-            </div>  
-        </section>  
-  
-        <!-- 4. ภาคตะวันออก: ชลบุรี -->  
-        <section id="east" class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl shadow-pink-100/60 overflow-hidden border border-pink-100 p-6 md:p-8 space-y-6 hover:shadow-2xl hover:border-pink-200 transition-all duration-300">  
-            <div class="flex items-center justify-between border-b border-pink-50 pb-4">  
-                <div>  
-                    <span class="bg-pink-100 text-pink-700 font-semibold px-3 py-1 rounded-full text-xs">ภาคตะวันออก</span>  
-                    <h3 class="text-3xl font-bold text-slate-800 mt-2">จังหวัดชลบุรี</h3>  
+                    <button onclick="openModal('modal-chanthaburi')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
                 </div>  
             </div>  
   
-            <div class="grid lg:grid-cols-12 gap-8 items-start">  
-                <div class="lg:col-span-7 space-y-3">  
-                    <p class="text-xs font-semibold text-pink-400 uppercase tracking-wider flex items-center space-x-1">  
-                        <span>📸</span> <span>ภาพสถานที่ท่องเที่ยว</span>  
-                    </p>  
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/e2.jpg" alt="เที่ยวชลบุรี" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/e4.jpg" alt="เที่ยวชลบุรี" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/e7.jpg" alt="เที่ยวชลบุรี" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                    </div>  
+            <!-- 5. กาญจนบุรี (ภาคตะวันตก) -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/w6.jpg" alt="กาญจนบุรี" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคตะวันตก</span>  
                 </div>  
-  
-                <div class="lg:col-span-5 space-y-4">  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>📌</span> <span>ข้อมูลเบื้องต้น</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1 leading-relaxed">เมืองท่องเที่ยวชายทะเลใกล้นครหลวง มีทั้งหาดทราย เกาะสวย และพัทยา</p>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">กาญจนบุรี</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"แคว้นโบราณ ด่านเจดีย์ มณีเมืองกาญจน์"</p>  
                     </div>  
-  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏖️</span> <span>สถานที่ท่องเที่ยวแนะนำ</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1">เกาะล้าน, หาดบางแสน, ปราสาทสัจธรรม</p>  
-                    </div>  
-  
-                    <div class="bg-rose-50/60 p-4 rounded-2xl border border-rose-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🦐</span> <span>ที่กินแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/e1.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/e3.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                        </div>  
-                        <p class="text-xs text-slate-600">ซีฟู้ดอ่างศิลา, ข้าวหลามหนองมน</p>  
-                    </div>  
-  
-                    <div class="bg-pink-50/30 p-4 rounded-2xl border border-pink-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏨</span> <span>ที่นอนแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/e5.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-pink-200">  
-                            <p class="text-sm text-slate-600">รีสอร์ทติดชายหาดพัทยา / เกาะล้าน</p>  
-                        </div>  
-                    </div>  
-                </div>  
-            </div>  
-        </section>  
-  
-        <!-- 5. ภาคตะวันตก: กาญจนบุรี -->  
-        <section id="west" class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl shadow-pink-100/60 overflow-hidden border border-pink-100 p-6 md:p-8 space-y-6 hover:shadow-2xl hover:border-pink-200 transition-all duration-300">  
-            <div class="flex items-center justify-between border-b border-pink-50 pb-4">  
-                <div>  
-                    <span class="bg-pink-100 text-pink-700 font-semibold px-3 py-1 rounded-full text-xs">ภาคตะวันตก</span>  
-                    <h3 class="text-3xl font-bold text-slate-800 mt-2">จังหวัดกาญจนบุรี</h3>  
+                    <button onclick="openModal('modal-kanchanaburi')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
                 </div>  
             </div>  
   
-            <div class="grid lg:grid-cols-12 gap-8 items-start">  
-                <div class="lg:col-span-7 space-y-3">  
-                    <p class="text-xs font-semibold text-pink-400 uppercase tracking-wider flex items-center space-x-1">  
-                        <span>📸</span> <span>ภาพสถานที่ท่องเที่ยว</span>  
-                    </p>  
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/w6.jpg" alt="เที่ยวกาญจนบุรี" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/w5.jpg" alt="เที่ยวกาญจนบุรี" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/w1.jpg" alt="เที่ยวกาญจนบุรี" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                    </div>  
+            <!-- 6. ภูเก็ต (ภาคใต้) -->  
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-rose-100 flex flex-col">  
+                <div class="relative h-52">  
+                    <img src="images/s6.jpg" alt="ภูเก็ต" class="w-full h-full object-cover">  
+                    <span class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">ภาคใต้</span>  
                 </div>  
-  
-                <div class="lg:col-span-5 space-y-4">  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>📌</span> <span>ข้อมูลเบื้องต้น</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1 leading-relaxed">เมืองแห่งธรรมชาติ ขุนเขา สายน้ำ และประวัติศาสตร์สมัยสงครามโลกครั้งที่ 2</p>  
+                <div class="p-6 flex flex-col flex-grow justify-between space-y-4">  
+                    <div>  
+                        <h4 class="text-2xl font-bold text-slate-800">ภูเก็ต</h4>  
+                        <p class="text-slate-500 text-sm mt-1">"ไข่มุกอันดามัน สวรรค์เมืองใต้"</p>  
                     </div>  
-  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🌉</span> <span>สถานที่ท่องเที่ยวแนะนำ</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1">สะพานข้ามแม่น้ำแคว, น้ำตกเอราวัณ, สังขละบุรี</p>  
-                    </div>  
-  
-                    <div class="bg-rose-50/60 p-4 rounded-2xl border border-rose-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🐟</span> <span>ที่กินแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/w3.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/w4.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                        </div>  
-                        <p class="text-xs text-slate-600">ต้มยำปลาคัง, แกงป่ารสจัดจ้าน</p>  
-                    </div>  
-  
-                    <div class="bg-pink-50/30 p-4 rounded-2xl border border-pink-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏨</span> <span>ที่นอนแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/w2.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-pink-200">  
-                            <p class="text-sm text-slate-600">แพพักริมแม่น้ำแคว / รีสอร์ทธรรมชาติ</p>  
-                        </div>  
-                    </div>  
-                </div>  
-            </div>  
-        </section>  
-  
-        <!-- 6. ภาคใต้: ภูเก็ต -->  
-        <section id="south" class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl shadow-pink-100/60 overflow-hidden border border-pink-100 p-6 md:p-8 space-y-6 hover:shadow-2xl hover:border-pink-200 transition-all duration-300">  
-            <div class="flex items-center justify-between border-b border-pink-50 pb-4">  
-                <div>  
-                    <span class="bg-pink-100 text-pink-700 font-semibold px-3 py-1 rounded-full text-xs">ภาคใต้</span>  
-                    <h3 class="text-3xl font-bold text-slate-800 mt-2">จังหวัดภูเก็ต</h3>  
+                    <button onclick="openModal('modal-phuket')" class="w-full bg-rose-50 hover:bg-rose-100 text-rose-700 font-medium py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">  
+                        <span>📖 ดูรายละเอียด "เที่ยว กิน นอน"</span>  
+                    </button>  
                 </div>  
             </div>  
   
-            <div class="grid lg:grid-cols-12 gap-8 items-start">  
-                <div class="lg:col-span-7 space-y-3">  
-                    <p class="text-xs font-semibold text-pink-400 uppercase tracking-wider flex items-center space-x-1">  
-                        <span>📸</span> <span>ภาพสถานที่ท่องเที่ยว</span>  
-                    </p>  
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/s6.jpg" alt="เที่ยวภูเก็ต" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                        <div class="bg-pink-50/40 rounded-2xl p-2 border border-pink-100 shadow-xs flex items-center justify-center overflow-hidden group">  
-                            <img src="images/s4.jpg" alt="เที่ยวภูเก็ต" class="rounded-xl w-full h-auto max-h-56 object-contain group-hover:scale-105 transition duration-300">  
-                        </div>  
-                    </div>  
-                </div>  
-  
-                <div class="lg:col-span-5 space-y-4">  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>📌</span> <span>ข้อมูลเบื้องต้น</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1 leading-relaxed">ไข่มุกอันดามัน เกาะสวรรค์ระดับโลก โดดเด่นด้วยทะเลสวยและตึกชิโนโปรตุกีส</p>  
-                    </div>  
-  
-                    <div class="bg-pink-50/40 p-4 rounded-2xl border border-pink-100/80">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏝️</span> <span>สถานที่ท่องเที่ยวแนะนำ</span></h4>  
-                        <p class="text-sm text-slate-600 mt-1">แหลมพรหมเทพ, ย่านเมืองเก่าภูเก็ต, หาดป่าตอง</p>  
-                    </div>  
-  
-                    <div class="bg-rose-50/60 p-4 rounded-2xl border border-rose-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🥟</span> <span>ที่กินแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/s7.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/s5.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                            <img src="images/s3.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-rose-200">  
-                        </div>  
-                        <p class="text-xs text-slate-600">หมี่ฮกเกี้ยน, ขนมจีนป้าติ่ง, โอต้าว</p>  
-                    </div>  
-  
-                    <div class="bg-pink-50/30 p-4 rounded-2xl border border-pink-100 space-y-3">  
-                        <h4 class="font-semibold text-slate-800 flex items-center space-x-2"><span>🏨</span> <span>ที่นอนแนะนำ</span></h4>  
-                        <div class="flex items-center space-x-3">  
-                            <img src="images/s2.jpg" class="w-14 h-14 rounded-xl object-cover shadow-xs border border-pink-200">  
-                            <p class="text-sm text-slate-600">พูลวิลล่าวิวทะเล / บูติคโฮเทลเมืองเก่า</p>  
-                        </div>  
-                    </div>  
-                </div>  
-            </div>  
-        </section>  
-  
+        </div>  
     </main>  
   
+    <!-- MODAL ตัวอย่าง: จังหวัดน่าน (สามารถทำเพิ่มสำหรับจังหวัดอื่นตามแพทเทิร์นนี้ได้เลยครับ) -->  
+    <div id="modal-nan" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">  
+        <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">  
+            <button onclick="closeModal('modal-nan')" class="absolute top-4 right-4 bg-black/50 hover:bg-black text-white rounded-full p-2 z-10 transition">  
+                ✕  
+            </button>  
+              
+            <div class="h-64 bg-cover bg-center relative" style="background-image: url('images/n2.jpg');">  
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>  
+                <div class="absolute bottom-6 left-6 text-white space-y-1">  
+                    <span class="bg-rose-600 px-3 py-1 rounded-full text-xs font-semibold">ภาคเหนือ</span>  
+                    <h3 class="text-3xl font-bold">น่าน</h3>  
+                    <p class="text-slate-200 text-sm">"กระซิบรักบรรลือโลก นครแห่งความเนิบช้า"</p>  
+                </div>  
+            </div>  
+  
+            <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50">  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-rose-700 flex items-center gap-2">⛰️ เที่ยว</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ วัดภูมินทร์ (กระซิบรักบันลือโลก)</li>  
+                        <li>✔️ ดอยเสมอดาว (จุดชมทะเลหมอก)</li>  
+                        <li>✔️ บ่อเกลือโบราณ 800 ปี</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-orange-600 flex items-center gap-2">🍜 กิน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ ข้าวซอยแม่ฮอก</li>  
+                        <li>✔️ ไก่ทอดมะแขว่นสูตรเมืองน่าน</li>  
+                        <li>✔️ คาเฟ่ริมแม่น้ำน่าน</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-purple-600 flex items-center gap-2">🏨 นอน</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>✔️ PX12 Capsule Hotel</li>  
+                        <li>✔️ Cocoa Valley Resort</li>  
+                        <li>✔️ Boklua View Resort</li>  
+                    </ul>  
+                </div>  
+                <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-100 space-y-2">  
+                    <h4 class="font-bold text-emerald-600 flex items-center gap-2">🎁 ของขึ้นชื่อ</h4>  
+                    <ul class="text-sm text-slate-600 space-y-1.5">  
+                        <li>⭐ ผ้าทอเมืองน่าน (ผ้าลายน้ำไหล / ผ้าไทลื้อ)</li>  
+                        <li>⭐ เครื่องเงินน่าน (ชมプภูคา)</li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <!-- Script ควบคุม Modal -->  
+    <script>  
+        function openModal(modalId) {  
+            const modal = document.getElementById(modalId);  
+            if (modal) {  
+                modal.classList.remove('hidden');  
+                document.body.style.overflow = 'hidden';  
+            }  
+        }  
+        function closeModal(modalId) {  
+            const modal = document.getElementById(modalId);  
+            if (modal) {  
+                modal.classList.add('hidden');  
+                document.body.style.overflow = 'auto';  
+            }  
+        }  
+    </script>  
+  
     <!-- Footer -->  
-    <footer class="bg-white/90 backdrop-blur-md text-slate-500 py-10 text-center text-sm border-t border-pink-100/80 mt-20 shadow-inner">  
+    <footer id="footer" class="bg-slate-900 text-slate-400 py-10 text-center text-sm border-t border-slate-800 mt-20 shadow-inner">  
         <div class="max-w-6xl mx-auto px-4 space-y-2">  
-            <p class="text-slate-700 font-medium">🌸 Amazing Thailand : 1 ภาค 1 จังหวัด ไม่ไปไม่รู้</p>  
-            <p class="text-xs text-slate-400">จัดทำเพื่อการเรียนวิชา 832214 การเขียนโปรแกรมด้วยภาษาสมัยใหม่ (Midterm 1-2569)</p>  
+            <p class="text-rose-200 font-medium">🌸 Amazing Thailand : 1 ภาค 1 จังหวัด ไม่ไปไม่รู้</p>  
+            <p class="text-xs text-slate-500">จัดทำเพื่อการเรียนวิชา 832214 การเขียนโปรแกรมด้วยภาษาสมัยใหม่ (Midterm 1-2569)</p>  
         </div>  
     </footer>  
   
